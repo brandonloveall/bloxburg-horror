@@ -1,9 +1,9 @@
 export interface DeckData {
-	guid: string;
-	cards: string[];
-	isSelected: boolean;
+	id: string;
 	name: string;
-	investigator: string;
+	investigator_code: string;
+	slots: Record<string, number>;
+	isSelected: boolean;
 }
 
 const GetDecks = script.Parent!.WaitForChild("GetDecks") as RemoteFunction;

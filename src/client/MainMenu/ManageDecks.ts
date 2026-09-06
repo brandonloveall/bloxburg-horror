@@ -23,7 +23,7 @@ GetDecks_Invoke((_decks) => {
 		selected.Visible = deck.isSelected;
 		deckTemplate.Parent = decksFrame;
 
-		decks.set(deck.guid, deck);
+		decks.set(deck.id, deck);
 	}
 });
 
